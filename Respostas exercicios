@@ -1,0 +1,103 @@
+
+Questão 2
+Responda na folha de respostas as perguntas sobre o projeto da questão 1:
+
+a) No import da api do google maps no index.html, para que servem as tags async e defer?
+R:O atributo async é usado para indicar ao navegador que o script pode ser executado assincronamente.
+A análise do HTML não irá ser pausada quando encontrar esse elemento script – sua requisição ocorrerá
+paralelamente e sua execução pode acontecer a qualquer momento em que o script seja completamente 
+carregado.
+
+Exemplo:
+
+<script async src="script.js">  
+
+Esse atributo só está disponível para script localizados em arquivos externos. 
+Quando um script externo contém esse atributo, o arquivo pode ser requisitado 
+enquanto o HTML está sendo analisado. Assim que terminado, a análise do HTML é 
+pausada e a execução do script é realizada.
+
+O atributo defer diz ao navegador para executar o script apenas quando a análise 
+do HTML estiver finalizada.
+
+Exemplo:
+
+<script defer src="script.js">
+
+O script será requisitado assincronamente, seu download será completado e, apenas 
+quando a análise do documento HTML estiver finalizada, ele será executado. Mesmo se 
+o download completo do script acontecer antes da análise completa do HTML, ele só será
+executado depois.
+Caso você venha a ter múltiplos elementos script com o atributo defer.
+<script defer src=“jquery.js">
+<script defer src=“bootstrap.js">
+Eles serão requisitados paralelamente e executados na sequência declarada.
+
+b) Para que serve o parâmetro &callback=initMap na url da api do google maps?
+
+c) O que acontece quando removemos o parâmetro &callback=initMap da url da api do google maps? Explique o porque.
+
+d) Descreva pelo menos uma forma de como podemos fazer com que a aplicação funcione corretamente mesmo sem este parâmetro.
+
+e) Explique para que servem as seguintes tags do index.html:
+ <link rel="manifest" href="manifest.json">
+ R:especifica relações entre o documento atual e um recurso externo 
+
+ <meta name="theme-color" content=""> 
+ R:A partir da versão 39 do Chrome para Android no Lollipop, 
+ você poderá usar o tema - meta tag de cor para definir a cor
+ da barra de ferramentas - isso significa que não há mais barras 
+ de ferramentas cinza de Seattle! A sintaxe é bastante simples: 
+ adicione uma metatag à <head> da sua página com o nome = " theme - color " 
+ e defina o conteúdo para qualquer cor CSS válida .
+
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ R:Usando a metatag "apple-mobile-web-app-capable" no elemento 
+ head de uma página HTML, ele informa ao Apple iOS que o aplicativo
+ pode ser instalado no trampolim dos usuários para que inicie o 
+ navegador Safari Mobile sem um menu Barra.
+
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ R:Define o estilo da barra de status para um aplicativo da web. 
+ Essa metatag não tem efeito, a menos que você especifique primeiro
+ o modo de tela cheia, conforme descrito em apple - apple - mobile - web - app -capable.
+ Se o conteúdo estiver definido como padrão, a barra de status aparecerá normal.
+ Se definido como preto , a barra de status possui um plano de fundo preto .
+
+f) Está aplicação pode ser considerada um PWA? Em caso negativo, explique o que falta para que seja.
+
+
+
+Questão 4
+
+Responda na folha de respostas as perguntas sobre o projeto da questão 2:
+
+a) Para que serve o método ngOnInit, quais são os outros métodos do Angular lifecycle hooks e para que servem?
+R: ngOnInit e um constructor: é um método default do TypeScript, 
+ele é utilizado como membro uma class que possibilita trabalhar 
+com Injeção de Dependência (DI).
+
+b) Neste projeto, estamos usando os componentes gráficos da versão 4 da biblioteca gráfica do Ionic. Nesta versão, 
+os componentes são Web Components. Explique o que são Web Components e explique quais são as vantagens deles.
+R: Os componentes da Web são um conjunto de APIs da plataforma da Web que permitem criar novas 
+tags HTML personalizadas, reutilizáveis ​​e encapsuladas para usar em páginas da Web e aplicativos 
+da Web. Componentes customizados e widgets criados nos padrões do Web Component, funcionarão em 
+navegadores modernos e podem ser usados ​​com qualquer biblioteca ou estrutura JavaScript que trabalhe 
+com HTML.
+
+c) Para que serve a tag ngFor do angular?
+R:O ngFor apenas substitui a mesma função de ng-repeat do Angular 1.x, onde ele irá fazer o loop por 
+toda a extensão de um array, não precisa nem especificar nem saber qual é a extensão dela. Se for 
+5, 10 ou 300 o ngFor irá passar por todas. A diferença entre o ngFor e o for() é que o ngFor é aplicado
+diretamente no template, ou seja, se você deseja fazer alguma manipulação dos dados 
+antes de passar para a view, isso deve ser feito ainda no component responsável, ai sim você pode usar 
+o for() para somente depois passar para sua view (html).
+
+d) O que o codigo abaixo representa no arquivo list.page.ts? legends: Array<string> = []
+
+e) Como funciona a api Events do Ionic? Para que serve?
+
+f) O que é flexbox? Para que servem as tags ion-grid, ion-row, ion-col? Quais as vantagens em utilizálas?
+R:O layout de caixa flexível CSS, comumente conhecido como Flexbox, é um modelo de layout da Web CSS3. 
+Está no estágio de recomendação do W3C. O layout flexível permite que elementos responsivos dentro de 
+um contêiner sejam organizados automaticamente, dependendo do tamanho da tela
