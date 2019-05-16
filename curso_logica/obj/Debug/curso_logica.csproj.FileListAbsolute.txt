@@ -1,0 +1,7 @@
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\bin\Debug\curso_logica.exe.config
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\bin\Debug\curso_logica.exe
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\bin\Debug\curso_logica.pdb
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\obj\Debug\curso_logica.csprojAssemblyReference.cache
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\obj\Debug\curso_logica.csproj.CoreCompileInputs.cache
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\obj\Debug\curso_logica.exe
+C:\Users\JACE\Documents\Visual Studio 2017\Projects\curso_logica\curso_logica\obj\Debug\curso_logica.pdb
